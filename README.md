@@ -14,7 +14,9 @@ Professional portfolio website showcasing projects, skills, and experience with 
 
 ## 🚀 Live Demo
 
-Visit the live site: [https://vamsivalluri-19.github.io/Portfolio-website/](https://vamsivalluri-19.github.io/Portfolio-website/)
+**🌐 Live Site:** [https://vamsivalluri-19.github.io/Portfolio-website/](https://vamsivalluri-19.github.io/Portfolio-website/)
+
+The portfolio is now live and fully functional! Visit the link above to see all features in action.
 
 ## 🛠️ Technologies Used
 
