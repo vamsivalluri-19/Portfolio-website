@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vamsi Valluri | Portfolio</title>
+  <meta name="description" content="Portfolio of Vamsi Valluri - software engineer focused on web development and practical product solutions." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#home">Vamsi Valluri</a>
+      <button id="mobile-menu" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <div class="links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#profile">Profile</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" title="Toggle theme" aria-label="Toggle theme">Dark</button>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <h1>Vamsi Valluri</h1>
+      <p class="subtitle">Software Engineer | Web Developer | Problem Solver</p>
+      <p class="hero-summary">
+        I build reliable web applications with clean interfaces, scalable backends, and practical business impact.
+      </p>
+      <div class="cta">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn btn-outline" href="https://github.com/vamsivalluri-19" target="_blank" rel="noopener">GitHub Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a software engineer with a strong interest in developing practical and user-focused web products.
+        My work emphasizes clear architecture, maintainable code, and smooth user experiences.
+      </p>
+      <ul class="about-list">
+        <li><strong>Location:</strong> Guntur, India</li>
+        <li><strong>Focus:</strong> Full-stack development, APIs, cloud, and AI-enabled applications</li>
+        <li><strong>Approach:</strong> Structured problem solving and quality-driven development</li>
+      </ul>
+      <div class="socials">
+        <a href="https://github.com/vamsivalluri-19" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a id="linkedin-link" href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#contact" aria-label="Contact">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="profile" class="section alt">
+    <div class="container">
+      <h2>My Profile</h2>
+      <p class="muted">Edit your details and upload your own profile image directly from this page.</p>
+
+      <div class="profile-layout">
+        <article class="profile-card">
+          <img
+            id="profile-preview"
+            src="https://avatars.githubusercontent.com/u/191577980?v=4"
+            alt="Profile preview"
+          />
+          <div class="card-actions">
+            <label class="btn btn-small" for="profile-image">Upload Image</label>
+            <input id="profile-image" type="file" accept="image/*" hidden />
+            <button id="remove-image" class="btn btn-outline btn-small" type="button">Remove Image</button>
+          </div>
+        </article>
+
+        <form id="profile-form" class="profile-form">
+          <div class="grid-2">
+            <input id="profile-name" type="text" placeholder="Your Name" value="Vamsi Valluri" required disabled />
+            <input id="profile-role" type="text" placeholder="Your Role" value="Software Engineer" required disabled />
+          </div>
+          <div class="grid-2">
+            <input id="profile-location" type="text" placeholder="Location" value="Guntur, India" disabled />
+            <input id="profile-email" type="email" placeholder="Email" value="vamsivalluri533@gmail.com" disabled />
+          </div>
+          <input id="profile-linkedin" type="url" placeholder="LinkedIn URL" value="https://www.linkedin.com" disabled />
+          <textarea id="profile-bio" rows="5" placeholder="Write about yourself" disabled>I am passionate about building clean, useful, and production-ready web applications. I focus on user experience, reliable backend integration, and practical problem solving.</textarea>
+
+          <div class="card-actions">
+            <button id="edit-profile" class="btn btn-small" type="button">Edit Profile</button>
+            <button id="save-profile" class="btn btn-small" type="submit" disabled>Save Details</button>
+            <button id="reset-profile" class="btn btn-outline btn-small" type="button">Reset</button>
+          </div>
+          <p id="profile-status" class="muted small" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-top"><span>HTML</span><span>90%</span></div>
+          <div class="bar"><span class="level-90"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><span>CSS</span><span>85%</span></div>
+          <div class="bar"><span class="level-85"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><span>JavaScript</span><span>80%</span></div>
+          <div class="bar"><span class="level-80"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><span>Python</span><span>85%</span></div>
+          <div class="bar"><span class="level-85"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><span>Flask/Django</span><span>75%</span></div>
+          <div class="bar"><span class="level-75"></span></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><span>SQL</span><span>70%</span></div>
+          <div class="bar"><span class="level-70"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <p class="muted">Latest repositories are loaded directly from GitHub.</p>
+      <div class="grid" id="github-projects" aria-live="polite">
+        <article class="card card-loading">
+          <div class="card-body">
+            <h3>Loading projects...</h3>
+            <p>Please wait while projects are fetched from GitHub.</p>
+          </div>
+        </article>
+      </div>
+      <p id="projects-status" class="muted small"></p>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <div class="grid-2">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+        </div>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+      <p class="muted small">This form currently shows a confirmation message in-page. Connect it to your preferred backend/email service for production use.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Vamsi Valluri • All rights reserved</p>
+      <a href="#home" class="back-to-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
